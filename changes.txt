@@ -1,3 +1,87 @@
 RGB_and_Buzzer_1.1b
--Resistor values changed: 
+-resistor values changed: 
+ -R2: 4k7
+ -R3: 10k
+ -R4: 2k2
+
+All boards v1.1
+-bottom layer:
+ -"www.mexdulon.com"
+-bottom silkscreen:
+ -"Licensed under CERN OHL v.1.2"
+
+Adapter_1.1
+-1 more connector for each side (A and B)
+-values of connectors renamed:
+ -A1 to A4 -> A
+ -B1 to B4 -> B
+
+Adder_1.1
+-jumper JP3 changed:
+ -2-pin -> 3-pin jumper
+ -C0 L -> C0 L/H
+-jumper values renamed:
+ -JP1: C0 0/1 -> C0 1/2
+ -JP2: C4 1/0 -> C4 2/1
+
+AND_NAND_1.1
+-copy from Logic_Gate_1.0
+-values changed:
+ -Out X -> AND
+ -Out /X -> NAND
+
+BCD_7SD_Decoder_1.1
+-simplified:
+ -X2 (Ctrl Input) removed
+
+BCD_Counter_1.1
+-X5 connections changed:
+ -/Carry X5.4 -> X5.1
+ -/Borrow X5.2 -> X5.2
+-X5 value renamed:
+ -C/B -> Out C/B
+
+Jumper_1.1
+-option for current increase for use of power bank:
+ -resistor R1 added
+ -JP3 (USB EN) added
+-USB micro socket (X6) added
+
+LED_Display_1.1
+-jumper JP1 (EN) removed
+-values renamed:
+ -A -> In A and Out A
+ -B -> In B and Out B
+
+Multiplexer_1.1
+-values of jumper renamed:
+ -JP1: S-0/2 -> S 1/2
+ -JP2: S-1/3 -> S 3/4
+
+OR_NOR_1.1
+-created from Logic_Gate_1.0
+-values changed:
+ -Out X -> OR
+ -Out /X -> NOR
+
+RGB_and_Buzzer_1.1
+-jumper values renamed:
+ -JP1: Buzz 0/1 -> Buzz 1/2
+ -JP2: Buzz 2/3 -> Buzz 3/4
+
+Universalregister_1.1
+-jumper JP1, JP2, JP3, JP4 removed
+-jumper JP2 (/CLR 4/H) added:
+ -CLR is X2.4 or disabled
+-X3 (Mode) connection changed:
+ -X3.1 = SL
+ -X3.2 = S0
+ -X3.3 = S1
+ -X3.4 = SR
+
+XOR_NXOR_1.1
+-created from Logic_Gate_1.0
+-values changed:
+ -Out X -> XOR
+ -Out /X -> XNOR
 
