@@ -27,7 +27,7 @@ const uint8_t Mex7SD::DISPLAY_CHARS[Mex7SD::NUM_CHARS][Mex7SD::SEGMENTS] = {
 };
 
 Mex7SD::Mex7SD(int port1, int port2)
-:	DOT_IDX(7),
+:	DOT_IDX(3),
 	_port1(port1, OUTPUT),
 	_port2(port2, OUTPUT)
 {
@@ -57,11 +57,14 @@ void Mex7SD::showCharWithIndex(int char_index) {
   }
   for(uint8_t i = 0; i < MexPort::BITS; ++i) {
     _port1.setPinState(i, DISPLAY_CHARS[char_index][i]);
-    _port2.setPinState(i, DISPLAY_CHARS[char_index][i+MexPort::BITS]);
+    if(i != DOT_IDX) {
+      _port2.setPinState(i, DISPLAY_CHARS[char_index][i+MexPort::BITS]);
+    }
   }
 }
 
 void Mex7SD::showBCD(int val) {
+  val = val % 10;
   if(val <= 9) {
     showChar('0' + val);
   } else {
@@ -74,7 +77,7 @@ void Mex7SD::showBCDDigit(int val, uint8_t digit) {
   for(uint8_t i = 0; i < digit; ++i) {
     divisor *= 10;
   }
-  val = (val / divisor) % 10;
+  val = (val / divisor);
   showBCD(val);
 }
 
@@ -94,7 +97,7 @@ void Mex7SD::showHexDigit(int val, uint8_t digit) {
   for(uint8_t i = 0; i < digit; ++i) {
     divisor *= 16;
   }
-  val = (val / divisor) % 16;
+  val = (val / divisor);
   showHex(val);
 }
 

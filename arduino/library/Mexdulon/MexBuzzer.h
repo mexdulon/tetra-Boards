@@ -22,9 +22,6 @@ public:
   void playTone(unsigned int freq, unsigned long duration);
   void pause();
 
-  void playMelody();
-  void playMelody(unsigned int tones[], unsigned int len, unsigned long duration = 300);
-
 private:
   uint8_t _pinIdx;
 };

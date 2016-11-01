@@ -57,14 +57,6 @@ uint8_t MexPort::getPinState(uint8_t index) const
 	return 0;
 }
 
-/*
-void MexPort::setPin(uint8_t index, uint8_t val)
-{
-	if(index > 0 && index < BITS) {
-		_pins[index] = val;
-	}
-}*/
-
 void MexPort::setValue(uint8_t val)
 {
 	for(int i = 0; i < BITS; ++i) {
@@ -89,10 +81,10 @@ void MexPort::writeAnalog(uint8_t index, uint8_t val)
 void MexPort::togglePinState(uint8_t index)
 {
 	if(index >= 0 && index < BITS) {
-		if(_pinStates[index] == LOW) {
-			_pinStates[index] = HIGH;
-		} else {
+		if(_pinStates[index] != LOW) {
 			_pinStates[index] = LOW;
+		} else {
+			_pinStates[index] = HIGH;
 		}
 	}
 }

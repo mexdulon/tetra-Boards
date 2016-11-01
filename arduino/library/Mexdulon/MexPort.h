@@ -33,8 +33,8 @@ class MexPort
     void writeAnalog(uint8_t index, uint8_t val);
     /* set pin to digital state (update needed!) */
   	void setPinState(uint8_t index, uint8_t val);
-	/* set value for port */
-	void setValue(uint8_t val);
+	  /* set value for port */
+	  void setValue(uint8_t val);
     /* toggles pin state (update needed!) */
   	void togglePinState(uint8_t index);
 

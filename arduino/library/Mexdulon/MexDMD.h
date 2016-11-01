@@ -23,14 +23,11 @@ public:
 
   void init();
   void update();
-
-  void dimLight(unsigned int val);
-  void showMatrix(Matrix matrix);
+  void showMatrix(struct Matrix matrix);
 
 private:
   MexPort _portCol, _portRow;
   struct Matrix _matrix;
-  unsigned int _dimmerTime;
 };
 
 #endif //MEX_DMD_DEFINED
