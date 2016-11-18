@@ -1,0 +1,8 @@
+Part,Value,Device,Package,Description
+C1,100n,C-EU050-025X075,C050-025X075,"CAPACITOR, European symbol"
+IC1,4040N,4040N,DIL16,12-stage binary/ripple COUNTER
+JP1,Clr C2/L,JP2E,JP2,JUMPER
+X1,Ctrl,ML6C,ML-6,
+X2,Out A,ML6D,ML-6,
+X3,Out B,ML6D,ML-6,
+X4,Out C,ML6D,ML-6,
