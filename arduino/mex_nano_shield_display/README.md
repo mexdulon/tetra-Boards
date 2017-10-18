@@ -9,7 +9,7 @@ This project is for the Arduino Nano Shield and uses the display for outputs. Th
 |set |open|Unsigned Int|
 |set |set |Alpha/Analog|
 
-##Hexadecimal
+## Hexadecimal
 Value of In A is displayed on right display in hexadecimal.
 Value of In B is displayed on left display in hexadecimal.
 
@@ -23,7 +23,7 @@ Value of In B is displayed on left display in hexadecimal.
 |14   |E          |
 |15   |F          |
 
-##Signed Int
+## Signed Int
 Value of In A is displayed as signed integer value (decimal).
 In B sets the mode, how the value is interpreted.
 
@@ -35,10 +35,10 @@ In B sets the mode, how the value is interpreted.
 |11  |Inv. Sign Bit  |
 |else|Twos Complement|
 
-##Unsigned Int
+## Unsigned Int
 In A and In B are interpreted as one word and displayed as unsigned integer (decimal). The right decimal point shows the 100, the left one (together with right) 200.
 
-##Alpha/Analog
+## Alpha/Analog
 In analog modes the analog value of pin A1 is read and displayed.
 In animation mode the digital value of A is used for the output.
 In alpha mode the digital value of A and B combined are displayed as ASCII character.
