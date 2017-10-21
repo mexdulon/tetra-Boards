@@ -1,13 +1,13 @@
 
 // Input Pins
-#define PIN_A1  A3
-#define PIN_A2  A2
-#define PIN_A3  A1
-#define PIN_A4  A0
-#define PIN_B1  A7
-#define PIN_B2  A6
-#define PIN_B3  A5
-#define PIN_B4  A4
+#define PIN_A_1  A3
+#define PIN_A_2  A2
+#define PIN_A_3  A1
+#define PIN_A_4  A0
+#define PIN_B_1  A7
+#define PIN_B_2  A6
+#define PIN_B_3  A5
+#define PIN_B_4  A4
 
 // Display Pins (Output)
 #define PIN_DA  8
@@ -20,8 +20,8 @@
 #define PIN_DP  9 // Decimal Point
 
 // Display COM (Output)
-#define PIN_COMA  10
-#define PIN_COMB  11
+#define PIN_COM_A  10
+#define PIN_COM_B  11
 
 // Options (Input)
 #define PIN_OPT1  12
@@ -37,9 +37,9 @@
 #define SEG_DP    7
 #define SEGMENTS  8
 
-#define CHAR_SPACE  32
-#define CHAR_MINUS  45
-#define NUM_CHARS   128
+#define CHAR_SPACE  32  // character code for space
+#define CHAR_MINUS  45  // character code for minus
+#define NUM_CHARS   128 // number of characters in table DISPLAY_CHARS
 
 const uint8_t DISPLAY_CHARS[NUM_CHARS][SEGMENTS] = {
   { LOW,  LOW,  LOW,  LOW,  LOW,  LOW,  LOW,  LOW}, //   0 
@@ -172,13 +172,14 @@ const uint8_t DISPLAY_CHARS[NUM_CHARS][SEGMENTS] = {
   { LOW,  LOW,  LOW,  LOW,  LOW,  LOW,  LOW,  LOW}  // 127  DEL
 };
 
+// the modes selected by Opt1 and Opt2
 #define MODE_HEXADECIMAL  0
 #define MODE_UNSIGNED     1
 #define MODE_SIGNED       2
 #define MODE_ALPHA_ANALOG 3
 
-#define DIGIT_OFFSET      0x30
-#define ALPHA_OFFSET      0x41 
+#define DIGIT_OFFSET      48 // offset for digits (starting at 0)
+#define ALPHA_OFFSET      65 // offset for letters (starting at A)
 
 uint8_t data_mode = 0;
 
@@ -255,6 +256,9 @@ void setDigitRight(uint8_t val)
   }
 }
 
+/*
+ * read analog value and convert to digital
+ */
 uint8_t getDigital(int analogPin)
 {
   int val = analogRead(analogPin);
@@ -265,16 +269,19 @@ uint8_t getDigital(int analogPin)
   }
 }
 
+/*
+ * update input signals
+ */
 void updateInputs()
 {
-  uint8_t a1 = getDigital(PIN_A1) & 1;
-  uint8_t a2 = getDigital(PIN_A2) & 1;
-  uint8_t a3 = getDigital(PIN_A3) & 1;
-  uint8_t a4 = getDigital(PIN_A4) & 1;
-  uint8_t b1 = getDigital(PIN_B1) & 1;
-  uint8_t b2 = getDigital(PIN_B2) & 1;
-  uint8_t b3 = getDigital(PIN_B3) & 1;
-  uint8_t b4 = getDigital(PIN_B4) & 1;
+  uint8_t a1 = getDigital(PIN_A_1) & 1;
+  uint8_t a2 = getDigital(PIN_A_2) & 1;
+  uint8_t a3 = getDigital(PIN_A_3) & 1;
+  uint8_t a4 = getDigital(PIN_A_4) & 1;
+  uint8_t b1 = getDigital(PIN_B_1) & 1;
+  uint8_t b2 = getDigital(PIN_B_2) & 1;
+  uint8_t b3 = getDigital(PIN_B_3) & 1;
+  uint8_t b4 = getDigital(PIN_B_4) & 1;
   input_a = (a4 << 3) | (a3 << 2) | (a2 << 1) | a1;
   input_b = (b4 << 3) | (b3 << 2) | (b2 << 1) | b1;
   uint8_t opt1 = digitalRead(PIN_OPT1);
@@ -387,20 +394,20 @@ void showAlpha()
 
 void showAnalogDecimal()
 {
-  int val = analogRead(PIN_A1);
+  int val = analogRead(PIN_A_1);
   showUnsigned(val);
 }
 
 void showAnalogPercent()
 {
-  int val = analogRead(PIN_A1);
+  int val = analogRead(PIN_A_1);
   val = 99 * val / 255;
   showUnsigned(val);
 }
 
 void showAnalogHexadecimal()
 {
-  int val = analogRead(PIN_A1);
+  int val = analogRead(PIN_A_1);
   showHexadecimal(val);
 }
 
@@ -493,26 +500,26 @@ void setup() {
   pinMode(PIN_DF, OUTPUT);
   pinMode(PIN_DG, OUTPUT);
   pinMode(PIN_DP, OUTPUT);
-  pinMode(PIN_COMA, OUTPUT);
-  pinMode(PIN_COMB, OUTPUT);
+  pinMode(PIN_COM_A, OUTPUT);
+  pinMode(PIN_COM_B, OUTPUT);
   pinMode(PIN_OPT1, INPUT);
   pinMode(PIN_OPT2, INPUT);
-  digitalWrite(PIN_COMA, LOW);
-  digitalWrite(PIN_COMB, LOW);
+  digitalWrite(PIN_COM_A, LOW);
+  digitalWrite(PIN_COM_B, LOW);
 }
 
 void loop() {
   updateInputs();
   displayData();
   updateDisplayLeft();
-  digitalWrite(PIN_COMA, HIGH);
+  digitalWrite(PIN_COM_A, HIGH);
   delayMicroseconds(100);
   // this write of LOW with delay is used to dim the display
-  digitalWrite(PIN_COMA, LOW);
+  digitalWrite(PIN_COM_A, LOW);
   delayMicroseconds(500);
   updateDisplayRight();
-  digitalWrite(PIN_COMB, HIGH);
+  digitalWrite(PIN_COM_B, HIGH);
   delayMicroseconds(100);
-  digitalWrite(PIN_COMB, LOW);
+  digitalWrite(PIN_COM_B, LOW);
   delayMicroseconds(500);
 }
