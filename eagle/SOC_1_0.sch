@@ -1530,7 +1530,7 @@ WITHOUT ANY EXPRESS OR IMPLIED WARRANTY,
 INCLUDING OF MERCHANTABILITY, SATISFACTORY 
 QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. 
 Please see the CERN OHL v.1.2 for applicable conditions</text>
-<text x="163.83" y="25.4" size="2.1844" layer="94">Copyright Oliver Krebs 2017</text>
+<text x="163.83" y="25.4" size="2.1844" layer="94">Copyright Oliver Krebs 2016</text>
 </plain>
 <instances>
 <instance part="GND2" gate="1" x="38.1" y="137.16" rot="R270"/>

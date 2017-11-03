@@ -14,14 +14,14 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -127,7 +127,7 @@
 </layers>
 <board>
 <plain>
-<text x="25" y="2.5" size="1.524" layer="25" font="vector" ratio="15" align="bottom-center">Quad Socket v1.0</text>
+<text x="25" y="2.5" size="1.9304" layer="25" font="vector" ratio="15" align="bottom-center">Quad Socket v1.0</text>
 <wire x1="0" y1="3.45" x2="0" y2="46.55" width="0" layer="20"/>
 <wire x1="3.45" y1="50" x2="46.55" y2="50" width="0" layer="20"/>
 <wire x1="50" y1="46.55" x2="50" y2="3.45" width="0" layer="20"/>
@@ -136,9 +136,9 @@
 <wire x1="46.55" y1="0" x2="50" y2="3.45" width="0" layer="20" curve="90"/>
 <wire x1="46.55" y1="50" x2="50" y2="46.55" width="0" layer="20" curve="-90"/>
 <wire x1="3.45" y1="50" x2="0" y2="46.55" width="0" layer="20" curve="90"/>
-<text x="25" y="45" size="2.032" layer="16" font="vector" rot="MR0" align="bottom-center">www.mexdulon.com</text>
-<text x="25" y="2.5" size="1.27" layer="26" font="vector" rot="MR0" align="bottom-center">Licensed under CERN OHL v.1.2</text>
-<text x="25" y="45" size="2.032" layer="26" font="vector" rot="MR0" align="bottom-center">www.mexdulon.com</text>
+<text x="25" y="45" size="2.032" layer="16" font="vector" ratio="12" rot="MR0" align="bottom-center">www.mexdulon.com</text>
+<text x="25" y="2.5" size="1.27" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center">Licensed under CERN OHL v.1.2</text>
+<text x="25" y="45" size="2.032" layer="26" font="vector" ratio="12" rot="MR0" align="bottom-center">www.mexdulon.com</text>
 </plain>
 <libraries>
 <library name="01-my-con">
@@ -561,11 +561,11 @@ design rules under a new name.</description>
 <elements>
 <element name="X1" library="01-my-con" package="ML-6" value="A" x="5.08" y="34.29" smashed="yes" rot="R90">
 <attribute name="NAME" x="2.54" y="38.1" size="1.778" layer="25" font="vector"/>
-<attribute name="VALUE" x="13.97" y="29.21" size="1.778" layer="27" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="13.97" y="29.21" size="1.778" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 </element>
 <element name="X3" library="01-my-con" package="ML-6" value="X" x="45.72" y="34.29" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.18" y="38.1" size="1.778" layer="25" font="vector"/>
-<attribute name="VALUE" x="35.56" y="29.21" size="1.778" layer="27" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="35.56" y="29.21" size="1.778" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 </element>
 <element name="H1" library="holes" package="3,2-PAD" value="MOUNT-PAD-ROUND3.2" x="3.45" y="3.45"/>
 <element name="H2" library="holes" package="3,2-PAD" value="MOUNT-PAD-ROUND3.2" x="3.45" y="46.55"/>
@@ -573,19 +573,19 @@ design rules under a new name.</description>
 <element name="H4" library="holes" package="3,2-PAD" value="MOUNT-PAD-ROUND3.2" x="46.55" y="46.55"/>
 <element name="X2" library="01-my-con" package="ML-6" value="B" x="5.08" y="16.51" smashed="yes" rot="R90">
 <attribute name="NAME" x="2.54" y="20.32" size="1.778" layer="25" font="vector"/>
-<attribute name="VALUE" x="13.97" y="11.43" size="1.778" layer="27" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="13.97" y="11.43" size="1.778" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 </element>
 <element name="X4" library="01-my-con" package="ML-6" value="Y" x="45.72" y="16.51" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.18" y="20.32" size="1.778" layer="25" font="vector"/>
-<attribute name="VALUE" x="35.56" y="11.43" size="1.778" layer="27" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="35.56" y="11.43" size="1.778" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 </element>
 <element name="JP5" library="SparkFun-Connectors" package="1X04" value="LOW" x="24.13" y="21.59" smashed="yes" rot="R270">
 <attribute name="NAME" x="22.7838" y="23.4188" size="0.8128" layer="25" font="vector" ratio="10"/>
-<attribute name="VALUE" x="25.4" y="11.43" size="1.27" layer="27" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="25.4" y="11.43" size="1.27" layer="27" font="vector" ratio="12" rot="R180"/>
 </element>
 <element name="JP6" library="SparkFun-Connectors" package="1X04" value="HIGH" x="24.13" y="39.37" smashed="yes" rot="R270">
 <attribute name="NAME" x="22.7838" y="41.1988" size="0.8128" layer="25" font="vector" ratio="10"/>
-<attribute name="VALUE" x="25.4" y="29.21" size="1.27" layer="27" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="25.4" y="29.21" size="1.27" layer="27" font="vector" ratio="12" rot="R180"/>
 </element>
 <element name="JP1" library="01-my-jumper" package="JP4Q" value="A" x="13.97" y="35.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="11.43" y="41.148" size="0.8128" layer="25" font="vector" ratio="10"/>
