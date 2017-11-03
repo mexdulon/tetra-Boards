@@ -3,7 +3,7 @@ Kürzel	Board	Kurzbeschreibung
 ADA	Adapter 2x5 Port	Adapter, um zwei Ausgänge auf je bis zu vier Eingänge zu verteilen, 2x 5 Ports
 ADC	Analog Digital Converter	Wandelt analoge Signale in 8Bit digitale Werte um
 ADD	Adder 2x4 Bit	Addiert zwei binäre Zahlen (4 Bit) mit Carry In/Out (kaskadierbar), mit Inverter/XOR auch Subtraktion
-ALU Arithmetic Logic Unit für verschiedne arithemtische oder logische Operationen (addieren, subtrahieren, UND, ...)
+ALU	Arithmetic Logic Unit	für verschiedene arithemtische oder logische Operationen (addieren, subtrahieren, UND, ...)
 AMU	Analog Multiplexer 2x4:1	Wählt aus 4 analogen Signalen eins für den Ausgang (2x4:1)
 AND	AND & NAND 4x2:1	Kombiniert zwei Eingänge mit einem logischen AND und NAND (2:1)
 ANS	Arduino Nano Shield with Display	Shield für den Arduino Nano mit doppeltem 7-Segment Display
@@ -17,13 +17,13 @@ CDL	Counter Divider Logic	Logik für das Rücksetzen von Countern, z.B. für den
 CLK	Clock Generator	erzeugt ein präzises Taktsignal von 0.25, 0.5, 1.0 oder 2.0 Hz, z.B. für eine Uhr
 CMP	Comparator 2x4 Bit	Vergleicht zwei 4Bit binäre Werte miteinander und gibt <,> oder = aus
 CNT	Dual Counter 4 Bit	Zwei 4Bit Zähler zum binären Hochzählen (0 – 15)
-D12 Demultiplexer 1:2 schaltet 1 Datenwort auf einen von 2 Ausgängen (2 Ports)
-D14 Demultiplexer 1:4 schaltet 1 Datenwort auf einen von 4 Ausgängen (4 Ports)
-D18 Demultiplexer 1:8 schaltet 1 Datensignal auf einen von 8 Ausgängen (2 Ports)
+D12	Demultiplexer 1:2	schaltet 1 Datenwort auf einen von 2 Ausgängen (2 Ports)
+D14	Demultiplexer 1:4	schaltet 1 Datenwort auf einen von 4 Ausgängen (4 Ports)
+D18	Demultiplexer 1:8	schaltet 1 Datensignal auf einen von 8 Ausgängen (2 Ports)
 DAC	Digital Analog Converter (DAC)	wandelt digitale Werte in analoge Signale um, 2x4 Bit oder 8 Bit, optionaler Input C
 DEC	Decoder 1:8	Dekodiert binäre Werte in einzelne Zeilen, die Ausgänge sind invertiert (bin : 1-von-8)
 DFF	Dual D Flip-flop	Enthält zwei D Flipflops, die für das Speichern einzelner Daten genutzt werden können
-DIP DIP Socket  Ein Sockel für beliebige DIP-ICs, variable Verschaltung über Buchsenleiten mit 4 getrennten Ports
+DIP	DIP Socket	Ein Sockel für beliebige DIP-ICs, variable Verschaltung über Buchsenleiten mit 4 getrennten Ports
 DMD	Dot Matrix Display 4x4	Dot Matrix Display mit 4x4 LEDs, angesteuert über Zeile und Spalte, für Demonstrationen oder Animationen
 DMX	Diode Matrix 4x4	Dioden für einen invertierten ROM Speicher 4x4 Bit, werden über Jumper gesetzt (ROM invertiert)
 ENC	Encoder 8:3	Enkodiert Daten von zwei Ports in ein binäres Datenwort (1-von-8 : bin)
@@ -37,11 +37,11 @@ JOY	Joystick with Button	ein Mini-Joystick, der in zwei Achsen bewegt werden kan
 KEY	Keyboard 4x4	Matrix aus 4x4 Tastern, die Ausgabe gibt an, welcher Taster gedrückt wird
 LAD	Line Adapter	Adapter der die einzelnen Zeilen auf einzelne Ports aufteilt, z.B. für JK-Flipflop
 LED	Dual LED Display	Display für das Anzeigen von zwei binären Datenworten, je Port ein Ein- und Ausgang
-M81 Multiplexer 8:1 wählt aus 8 Eingängssignalen (2 Ports) eins für den Ausgang
+M81	Multiplexer 8:1	wählt aus 8 Eingängssignalen (2 Ports) eins für den Ausgang
 MTR	Dual Motor Shield	für das Betreiben von zwei Gleichstrommotoren oder einem Schrittmotor (max. 2 A)
 MUX	Multiplexer 2:1	über ein Select-Signal wird aus zwei Datenworten eins für den Ausgang gewählt (4x2:1)
 MXC	Modulo X Counter (3/6/9/12)	Zähler, der je nach Belegung modulo 3, 6, 9 oder 12 hochzählt
-N33 Tripple NAND 3:1  dreifaches NAND-Gatter 3:1, variable Verschaltung über Buchenleisten
+N33	Tripple NAND 3:1	dreifaches NAND-Gatter 3:1, variable Verschaltung über Buchenleisten
 NOR	OR & NOR 4x2:1	Kombiniert zwei Eingänge mit einem logischen OR und NOR
 OPA	Operational Amplifier	Operationsverstärker für das Kombinieren, Vergleichen und Verstärken analoger Signale (4x+, 4x-, Cmp, Gain)
 PAN	Dual Port AND 4:1	Kombiniert die Signale von einem oder zwei Ports mit einem logischen AND (4:1, 5:1 oder 8:1)
@@ -58,7 +58,7 @@ RLY	Quad Relay	vier Relais für das Schalten von beliebigen externen Schaltkreis
 ROM	ROM Diodes 4x4	Dioden für einen ROM Speicher 4x4 Bit, werden über Jumper gesetzt
 RSG	RS Generator	Eingabemodul für das Setzten, Rücksetzen eines Signals oder Aktivieren eines Taktgenerators
 SAD	Shift Adapter	Adapter, der die Datenpins um eins verschiebt, z.B. für Matrix-Multiplizierer
-SOC	Quad Socket	Buchsen für vier Datenports, zum variablen Verbinden über Steckleitungen
+SOC	Quad Socket	Buchsen für vier Datenports, zum variablen Verbinden über Steckleitungen 
 SRC	SRAM Cell	Eine Zelle mit RS Flipflop und Steuerlogik, für den Aufbau von SRAM (Static Random Acces Memory)
 SRG	Shift Register	ein Schieberegister für serielle Daten, die parallel (8 Bit) ausgegeben werden
 SWG	Square Wave Generator	Taktgenerator für Rechtecksignale, kann auf 1, 10, 100 und 1k Hz gesetzt werden
