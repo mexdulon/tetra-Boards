@@ -1,7 +1,8 @@
 # tetra-Boards
-Mexdulon Modules
+## mexdulon Modules for Experiments with Digital Electronics
 
 This repository includes material like schematics, layouts, instructions and explanations for mexdulon tetra-Boards. 
+The modular system is developed for understanding digital electronics by experimenting. Next to the standard digital components (gates, counter, register, etc.) we created also boards for analog signals and external outputs (motor driver, relay, power FET). All these published boards are licenced as Open Source Hardware. 
 If you have any suggestions, modifications or extensions, please feel free to share it with us.
 
 ## Overview about all boards
