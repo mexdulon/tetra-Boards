@@ -5,7 +5,7 @@ This repository includes material like schematics, layouts, instructions and exp
 The modular system is developed for understanding digital electronics by experimenting. Next to the standard digital components (gates, counter, register, etc.) we created also boards for analog signals and external outputs (motor driver, relay, power FET). All these published boards are licenced as Open Source Hardware. 
 If you have any suggestions, modifications or extensions, please feel free to share it with us.
 
-## Overview about all boards
+## List with all boards
 
 |Code|Description                       |
 |----|----------------------------------|
@@ -13,6 +13,7 @@ If you have any suggestions, modifications or extensions, please feel free to sh
 |ADA |Adapter 2x5 Port                  |
 |ADC |Analog Digital Converter          |
 |ADD |Adder 2x4 Bit                     |
+|ALU |Arithmetic Logic Unit             |
 |AMU |Analog Multiplexer 2x4:1          |
 |AND |AND & NAND 4x2:1                  |
 |ANS |Arduino Nano Shield with Display  |
@@ -26,9 +27,13 @@ If you have any suggestions, modifications or extensions, please feel free to sh
 |CLK |Clock Generator                   |
 |CMP |Comparator 2x4 Bit                |
 |CNT |Dual Counter 4 Bit                |
+|D12 |Demultiplexer 1:2                 |
+|D14 |Demultiplexer 1:4                 |
+|D18 |Demultiplexer 1:8                 |
 |DAC |Digital Analog Converter (DAC)    |
 |DEC |Decoder 1:8                       |
 |DFF |Dual D Flip-flop                  |
+|DIP |DIP Socket                        |
 |DMD |Dot Matrix Display 4x4            |
 |DMX |Diode Matrix 4x4                  |
 |ENC |Encoder 8:3                       | 
@@ -42,9 +47,11 @@ If you have any suggestions, modifications or extensions, please feel free to sh
 |KEY |Keyboard 4x4                      | 
 |LAD |Line Adapter                      | 
 |LED |Dual LED Display                  |
+|M81 |Multiplexer 8:1                   |
 |MTR |Dual Motor Shield                 |
 |MUX |Multiplexer 2:1                   |
-|MXC |Modulo X Counter (3/6/9/12)       |  
+|MXC |Modulo X Counter (3/6/9/12)       | 
+|N33 |Tripple NAND 3:1                  |
 |NOR |OR & NOR 4x2:1                    |
 |OPA |Operational Amplifier             |
 |PAN |Dual Port AND 4:1                 |
