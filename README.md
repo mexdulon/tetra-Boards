@@ -2,7 +2,7 @@
 ## mexdulon Modules for Experiments with Digital Electronics
 
 This repository includes material like schematics, layouts, instructions and explanations for mexdulon tetra-Boards. 
-The modular system is developed for understanding digital electronics by experimenting. Next to the standard digital components (gates, counter, register, etc.) we created also boards for analog signals and external outputs (motor driver, relay, power FET). All these published boards are licenced as Open Source Hardware. 
+The modular system is developed for understanding digital electronics by experimenting. Next to the standard digital components (gates, counter, register, etc.) we created also boards for analog signals and external outputs (motor driver, relay, power FET). All these published boards are licenced as Open Hardware, see below.
 If you have any suggestions, modifications or extensions, please feel free to share it with us.
 
 ## List with all boards
@@ -77,3 +77,10 @@ If you have any suggestions, modifications or extensions, please feel free to sh
 |UNI |Universal Register                |
 |WNG |White Noise Generator             |
 |XOR |XOR & XNOR 4x2:1                  |
+
+# Copyright and License
+Copyright Oliver Krebs 2017.
+
+This documentation describes Open Hardware and is licensed under the CERN OHL v. 1.2. 
+
+You may redistribute and modify this documentation under the terms of the CERN OHL v.1.2. (http://ohwr.org/cernohl). This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for applicable conditions
