@@ -508,7 +508,7 @@ DIN A4, landscape with extra doc field</description>
 <parts>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
-<part name="X1" library="01-my-con" deviceset="ML6D" device="" value="A1"/>
+<part name="X1" library="01-my-con" deviceset="ML6D" device="" value="A"/>
 <part name="H1" library="holes" deviceset="MOUNT-PAD-ROUND" device="3.2"/>
 <part name="H2" library="holes" deviceset="MOUNT-PAD-ROUND" device="3.2"/>
 <part name="H3" library="holes" deviceset="MOUNT-PAD-ROUND" device="3.2"/>
@@ -516,29 +516,29 @@ DIN A4, landscape with extra doc field</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="X2" library="01-my-con" deviceset="ML6D" device="" value="A2"/>
+<part name="X2" library="01-my-con" deviceset="ML6D" device="" value="B"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
-<part name="X3" library="01-my-con" deviceset="ML6D" device="" value="A3"/>
+<part name="X3" library="01-my-con" deviceset="ML6D" device="" value="C"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
-<part name="X4" library="01-my-con" deviceset="ML6D" device="" value="A4"/>
+<part name="X4" library="01-my-con" deviceset="ML6D" device="" value="D"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
-<part name="X5" library="01-my-con" deviceset="ML6D" device="" value="A"/>
+<part name="X5" library="01-my-con" deviceset="ML6D" device="" value="X"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
-<part name="X6" library="01-my-con" deviceset="ML6D" device="" value="A1"/>
+<part name="X6" library="01-my-con" deviceset="ML6D" device="" value="A"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
-<part name="X7" library="01-my-con" deviceset="ML6D" device="" value="A2"/>
+<part name="X7" library="01-my-con" deviceset="ML6D" device="" value="B"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
-<part name="X8" library="01-my-con" deviceset="ML6D" device="" value="A3"/>
+<part name="X8" library="01-my-con" deviceset="ML6D" device="" value="C"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" deviceset="VCC" device=""/>
-<part name="X9" library="01-my-con" deviceset="ML6D" device="" value="A4"/>
-<part name="X10" library="01-my-con" deviceset="ML6D" device="" value="A"/>
+<part name="X9" library="01-my-con" deviceset="ML6D" device="" value="D"/>
+<part name="X10" library="01-my-con" deviceset="ML6D" device="" value="X"/>
 <part name="P+10" library="supply1" deviceset="VCC" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" deviceset="DINA4_L" device=""/>
@@ -546,7 +546,7 @@ DIN A4, landscape with extra doc field</description>
 <sheets>
 <sheet>
 <plain>
-<text x="104.14" y="7.62" size="1.27" layer="97" distance="60">This documentation describes Open Hardware and is licensed 
+<text x="91.44" y="5.08" size="1.778" layer="97" distance="60">This documentation describes Open Hardware and is licensed 
 under the CERN OHL v. 1.2. You may redistribute and modify this 
 documentation under the terms of the CERN OHL v.1.2. 
 (http://ohwr.org/cernohl). This documentation is distributed
@@ -554,7 +554,7 @@ WITHOUT ANY EXPRESS OR IMPLIED WARRANTY,
 INCLUDING OF MERCHANTABILITY, SATISFACTORY 
 QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. 
 Please see the CERN OHL v.1.2 for applicable conditions</text>
-<text x="166.37" y="25.4" size="2.1844" layer="94" distance="60">Copyright Oliver Krebs 2017</text>
+<text x="166.37" y="25.4" size="2.1844" layer="94" distance="60">Copyright Oliver Krebs 2018</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="76.2" y="137.16" rot="R270"/>
