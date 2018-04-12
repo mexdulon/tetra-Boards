@@ -13,18 +13,18 @@ This project is for the Arduino Nano Shield and uses the display for outputs. Th
 Value of In A is displayed on right display in hexadecimal.
 Value of In B is displayed on left display in hexadecimal.
 
-|Value|Hexadecimal|
-|-----|-----------|
-|0..9 |0..9       |
-|10   |A          |
-|11   |B          |
-|12   |C          |
-|13   |D          |
-|14   |E          |
-|15   |F          |
+|Value|Output|
+|-----|------|
+|0..9 |0..9  |
+|10   |A     |
+|11   |b     |
+|12   |C     |
+|13   |d     |
+|14   |E     |
+|15   |F     |
 
 ## Signed Int
-Value of In A is displayed as signed integer value (decimal).
+Value of In A is displayed as signed integer value (decimal, -8..7).
 In B sets the mode, how the value is interpreted.
 
 |In B|Mode           |
@@ -36,17 +36,17 @@ In B sets the mode, how the value is interpreted.
 |else|Twos Complement|
 
 ## Unsigned Int
-In A and In B are interpreted as one word and displayed as unsigned integer (decimal). The right decimal point shows the 100, the left one (together with right) 200.
+In A and In B are interpreted as one word and displayed as unsigned integer (decimal, 0..255). The right decimal point shows the 100, the left one (together with right) 200.
 
 ## Alpha/Analog
 In analog modes the analog value of pin A1 is read and displayed.
 In animation mode the digital value of A is used for the output.
 In alpha mode the digital value of A and B combined are displayed as ASCII character.
 
-|In B|Mode              |
-|----|------------------|
-|8   |Analog Hexadecimal|
-|9   |Analog Percent    |
-|10  |Analog Decimal    |
-|12  |Animation 1       |
-|else|Alpha (ASCII)     |
+|In B|Mode              |Output    |
+|----|------------------|----------|
+|8   |Analog Hexadecimal|    00..FF|
+|9   |Analog Percent    |     0..99|
+|10  |Analog Decimal    |    0..255|
+|12  |Animation 1       | Animation|
+|else|Alpha (ASCII)     |ASCII char|

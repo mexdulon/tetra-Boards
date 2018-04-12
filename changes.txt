@@ -1,3 +1,29 @@
+SWI_1_1
+-changes for better signal edges
+-capacitors changed from e-caps to ceramic ones
+-capacitors connected to VCC instead of GND 
+
+CNT_1_1
+-clear with fix pulldown (JP3 removed)
+-JP2 connection to QD of IC1A (instead of VCC)
+
+CLK_1_1
+-connections for IC power (VDD, VSS)
+
+LAD_1_1
+-ports renamed: A0->A1, A1->A2, etc.
+-identical ports: all pins are connected 1:1
+
+SAD_1_1
+-pulldown resistors for low signals
+-renaming of pins (A0->A1, etc.)
+
+RGB_1_1c
+-resistor values changed: 
+ -R2: 680R
+ -R3: 4k7
+ -R4: 470R
+
 RGB_and_Buzzer_1.1b
 -resistor values changed: 
  -R2: 4k7
