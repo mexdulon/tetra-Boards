@@ -9,8 +9,8 @@ AND	AND & NAND	Logic	Kombiniert zwei Eingänge mit einem logischen AND und NAND 
 ANS	Arduino Nano Shield	Output	Shield für den Arduino Nano mit doppeltem 7-Segment Display
 ARD	Arduino Shield	Connection	Shield für das Aufstecken auf einen Arduino (z.B. Uno, Leonardo), 4 Ports
 B7D	BCD 7SD Decoder	Coding	Dekodiert binäre Dezimalwerte (BCD) für die Anzeige auf dem 7-Segment Display
-BCC	BCD Counter	Counter	Zählt zwischen 0 und 9 hoch oder runter, kann Werte laden
-BNC	Binary Up/Down Counter 4 Bit	Counter	Zählt zwischen 0 und 15 hoch oder runter, kann Werte laden
+BCC	BCD Up/Down Counter	Counter	Zählt zwischen 0 und 9 hoch oder runter, kann Werte laden
+BNC	Binary Up/Down Counter	Counter	Zählt zwischen 0 und 15 hoch oder runter, kann Werte laden
 BTN	Buttons	Input	Vier entprellte Taster zur Eingabe von Signalen bzw. Werten, die Taster können gleichzeitig gedrückt werden
 C12	12 bit Counter	Counter	12 Bit Zähler für das binäre Hochzählen (0 – 4095)
 CDL	Counter Divider Logic	Logic	Logik für das Rücksetzen von Countern, z.B. für den Aufbau einer Uhr
@@ -20,7 +20,7 @@ CNT	Binary Counter	Counter	Zwei 4Bit Zähler zum binären Hochzählen (0 – 15)
 D12	Demultiplexer 1:2	Coding	schaltet 1 Datenwort auf einen von 2 Ausgängen (2 Ports)
 D14	Quad Demultiplexer 1:4	Coding	schaltet 1 Datenwort auf einen von 4 Ausgängen (4 Ports)
 D18	Demultiplexer 1:8	Coding	schaltet 1 Datensignal auf einen von 8 Ausgängen (2 Ports)
-DAC	Digital Analog Converter (DAC)	Conversion	wandelt digitale Werte in analoge Signale um, 2x4 Bit oder 8 Bit, optionaler Input C
+DAC	Digital Analog (DAC)	Conversion	wandelt digitale Werte in analoge Signale um, 2x4 Bit oder 8 Bit, optionaler Input C
 DEC	Decoder 3:8	Coding	Dekodiert binäre Werte in einzelne Zeilen, die Ausgänge sind invertiert (bin : 1-von-8)
 DFF	Dual D Flip-flop	Memory	Enthält zwei D Flipflops, die für das Speichern einzelner Daten genutzt werden können
 DIP	DIP Socket	Adapter	Ein Sockel für beliebige DIP-ICs, variable Verschaltung über Buchsenleiten mit 4 getrennten Ports
@@ -43,7 +43,7 @@ MTR	Dual Motor Shield	Output	für das Betreiben von zwei Gleichstrommotoren oder
 MUX	Multiplexer 2:1	Coding	über ein Select-Signal wird aus zwei Datenworten eins für den Ausgang gewählt (4x2:1)
 MXC	Modulo X Counter	Counter	Zähler, der je nach Belegung modulo 3, 6, 9 oder 12 hochzählt
 N33	Tripple NAND 3:1	Logic	dreifaches NAND-Gatter 3:1, variable Verschaltung über Buchenleisten
-NOR	OR & NOR 4x2:1	Logic	Kombiniert zwei Eingänge mit einem logischen OR und NOR
+NOR	OR & NOR	Logic	Kombiniert zwei Eingänge mit einem logischen OR und NOR
 NOT	Double NOT Buffer	Logic	Doppeltes Nicht-Gatter für das Invertieren und Buffern, zusätzliches binäres Display
 OPA	Operational Amplifier	Conversion	Operationsverstärker für das Kombinieren, Vergleichen und Verstärken analoger Signale (4x+, 4x-, Cmp, Gain)
 PAN	Dual Port AND 4:1	Logic	Kombiniert die Signale von einem oder zwei Ports mit einem logischen AND (4:1, 5:1 oder 8:1)
