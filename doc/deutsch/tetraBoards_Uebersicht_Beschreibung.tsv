@@ -2,8 +2,8 @@ Kürzel	Board	Kurzbeschreibung
 7SD	7-Segment Display	Display zum Anzeigen von Ziffern (0-9) und einigen sonstigen Zeichen (-, A-F, ...)
 ADA	Adapter 2x5 Port	Adapter, um zwei Ausgänge auf je bis zu vier Eingänge zu verteilen, 2x 5 Ports
 ADC	Analog Digital Converter	Wandelt analoge Signale in 8Bit digitale Werte um
-ADD	Adder 2x4 Bit	Addiert zwei binäre Zahlen (4 Bit) mit Carry In/Out (kaskadierbar), mit Inverter/XOR auch Subtraktion
-ALU	Arithmetic Logic Unit	für verschiedene arithemtische oder logische Operationen (addieren, subtrahieren, UND, ...)
+ADD	Adder 2x4 Bit	Addiert zwei binäre Zahlen (4 Bit) mit Carry In/Out (kaskadierbar), mit Inverter bzw. XOR auch Subtraktion
+ALU	Arithmetic Logic Unit	für verschiedene arithmetische oder logische Operationen (addieren, subtrahieren, UND, ...)
 AMU	Analog Multiplexer 2x4:1	Wählt aus 4 analogen Signalen eins für den Ausgang (2x4:1)
 AND	AND & NAND 4x2:1	Kombiniert zwei Eingänge mit einem logischen AND und NAND (2:1)
 ANS	Arduino Nano Shield with Display	Shield für den Arduino Nano mit doppeltem 7-Segment Display
@@ -14,7 +14,7 @@ BNC	Binary Up/Down Counter 4 Bit	Zählt zwischen 0 und 15 hoch oder runter, kann
 BTN	Quad Buttons	Vier entprellte Taster zur Eingabe von Signalen bzw. Werten, die Taster können gleichzeitig gedrückt werden
 C12	Counter 12bit	12 Bit Zähler für das binäre Hochzählen (0 – 4095)
 CDL	Counter Divider Logic	Logik für das Rücksetzen von Countern, z.B. für den Aufbau einer Uhr
-CLK	Clock Generator	erzeugt ein präzises Taktsignal von 0.25, 0.5, 1.0 oder 2.0 Hz, z.B. für eine Uhr
+CLK	Clock Generator	erzeugt ein präzises Taktsignal von 1/4, 1/2, 1 oder 2 Hz, z.B. für eine Uhr
 CMP	Comparator 2x4 Bit	Vergleicht zwei 4Bit binäre Werte miteinander und gibt <,> oder = aus
 CNT	Dual Counter 4 Bit	Zwei 4Bit Zähler zum binären Hochzählen (0 – 15)
 D12	Demultiplexer 1:2	schaltet 1 Datenwort auf einen von 2 Ausgängen (2 Ports)
@@ -24,6 +24,7 @@ DAC	Digital Analog Converter (DAC)	wandelt digitale Werte in analoge Signale um,
 DEC	Decoder 1:8	Dekodiert binäre Werte in einzelne Zeilen, die Ausgänge sind invertiert (bin : 1-von-8)
 DFF	Dual D Flip-flop	Enthält zwei D Flipflops, die für das Speichern einzelner Daten genutzt werden können
 DIP	DIP Socket	Ein Sockel für beliebige DIP-ICs, variable Verschaltung über Buchsenleiten mit 4 getrennten Ports
+DLS	Digital Level Shifter	Signalwandler für digitale Signale von 3,3 Volt auf 5 Volt oder umgekehrt (2x2 Ports)
 DMD	Dot Matrix Display 4x4	Dot Matrix Display mit 4x4 LEDs, angesteuert über Zeile und Spalte, für Demonstrationen oder Animationen
 DMX	Diode Matrix 4x4	Dioden für einen invertierten ROM Speicher 4x4 Bit, werden über Jumper gesetzt (ROM invertiert)
 ENC	Encoder 8:3	Enkodiert Daten von zwei Ports in ein binäres Datenwort (1-von-8 : bin)
@@ -43,12 +44,14 @@ MUX	Multiplexer 2:1	über ein Select-Signal wird aus zwei Datenworten eins für 
 MXC	Modulo X Counter (3/6/9/12)	Zähler, der je nach Belegung modulo 3, 6, 9 oder 12 hochzählt
 N33	Tripple NAND 3:1	dreifaches NAND-Gatter 3:1, variable Verschaltung über Buchenleisten
 NOR	OR & NOR 4x2:1	Kombiniert zwei Eingänge mit einem logischen OR und NOR
+NOT	Double NOT Buffer	Doppeltes Nicht-Gatter für das Invertieren und Buffern, zusätzliches binäres Display
 OPA	Operational Amplifier	Operationsverstärker für das Kombinieren, Vergleichen und Verstärken analoger Signale (4x+, 4x-, Cmp, Gain)
 PAN	Dual Port AND 4:1	Kombiniert die Signale von einem oder zwei Ports mit einem logischen AND (4:1, 5:1 oder 8:1)
 PIN	Pin Header	Stiftleisten für die beliebige Kombination von bis zu 4 Ports oder für Messexperimente
 POR	Dual Port OR 4:1	Kombiniert die Signale von einem oder zwei Ports mit einem logischen OR (4:1, 5:1 oder 8:1)
 PRG	Pseudo Random Generator	Erzeugt Pseudo Random Werte, die seriell und parallel (8 Bit) ausgegeben werden
 PWM	PWM Generator	Generiert PWM Signale für das Dimmen (Lampen) oder Steuern (Motoren)
+PWR	Power & Voltmeter	Zum Versorgen der Schaltung stehen verschiedene Anschlüsse bereit, mit Spannungsregler und Voltmeter
 PXO	Dual Port XOR 4:1	Kombiniert die Signale von einem oder zwei Ports mit einem logischen XOR (4:1, 5:1 oder 8:1)
 QRS	Quad RS Buttons	4xRS-Flipflops, die über je zwei Taster gesetzt und rückgesetzt werden
 REG	Register 2x4	Speichert zwei Datenworte mit einer Taktflanke und gibt die gespeicherten Werte parallel aus
@@ -63,6 +66,7 @@ SRC	SRAM Cell	Eine Zelle mit RS Flipflop und Steuerlogik, für den Aufbau von SR
 SRG	Shift Register	ein Schieberegister für serielle Daten, die parallel (8 Bit) ausgegeben werden
 SWG	Square Wave Generator	Taktgenerator für Rechtecksignale, kann auf 1, 10, 100 und 1k Hz gesetzt werden
 SWI	Quad Switch	Vier Kippschalter, die für das Setzen von statischen Werten genutzt werden können
+TFF	Dual Toggle Flip-flop	Zweifaches T-Flipflop (wechselt Ausgang bei Taktflanke), mit separaten Ein- und Ausgängen
 TMP	Temperature Sensor	misst die Temperatur (0 bis 100 °C) und gibt diese als analoges Signal aus
 UNI	Universal Register	Universelles Register für das Laden, Speichern und Schieben von Daten, paralleler Ein- und Ausgang
 WNG	White Noise Generator	Erzeugt weißes Rauschen, Einsatz z.B. als Quelle für echten Zufall (True Random Generator)
