@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -5713,9 +5714,9 @@ DIN A5, landscape with doc field</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="P1" library="01-my-led" deviceset="RGB-5MM" device=""/>
 <part name="R1" library="01-my_rcl" deviceset="R-EU_" device="0207/10" value="220"/>
-<part name="R2" library="01-my_rcl" deviceset="R-EU_" device="0207/10" value="4k7"/>
-<part name="R3" library="01-my_rcl" deviceset="R-EU_" device="0207/10" value="10k"/>
-<part name="R4" library="01-my_rcl" deviceset="R-EU_" device="0207/10" value="2k2"/>
+<part name="R2" library="01-my_rcl" deviceset="R-EU_" device="0207/10" value="680"/>
+<part name="R3" library="01-my_rcl" deviceset="R-EU_" device="0207/10" value="4k7"/>
+<part name="R4" library="01-my_rcl" deviceset="R-EU_" device="0207/10" value="470"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="P2" library="01-my-led" deviceset="LED" device="5MM"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
