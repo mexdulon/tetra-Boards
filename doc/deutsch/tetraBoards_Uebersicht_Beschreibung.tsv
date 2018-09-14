@@ -4,10 +4,12 @@ ADA	Adapter	Connection	Adapter, um zwei Ausgänge auf je bis zu vier Eingänge z
 ADC	Analog Digital (ADC)	Conversion	Wandelt analoge Signale in 8Bit digitale Werte um
 ADD	Adder	Arithmetic	Addiert zwei binäre Zahlen (4 Bit) mit Carry In/Out (kaskadierbar), mit Inverter bzw. XOR auch Subtraktion
 ALU	Arithmetic Logic Unit	Arithmetic	für verschiedene arithmetische oder logische Operationen (addieren, subtrahieren, UND, ...)
+AMP	Audio Amplifier	Conversion	Verstärkt ein Audiosignal für die Ausgabe auf einem kleinen Lautsprecher
 AMU	Analog Multiplexer	Coding	Wählt aus 4 analogen Signalen eins für den Ausgang (2x4:1)
 AND	AND & NAND	Logic	Kombiniert zwei Eingänge mit einem logischen AND und NAND (2:1)
 ANS	Arduino Nano Shield	Output	Shield für den Arduino Nano mit doppeltem 7-Segment Display
 ARD	Arduino Shield	Connection	Shield für das Aufstecken auf einen Arduino (z.B. Uno, Leonardo), 4 Ports
+AVC	Analog Voltage Comparator	Conversion	Enthält 4 analoge Spannungs-Vergleicher, die mit Trimmern eingestellt werden können
 B7D	BCD 7SD Decoder	Coding	Dekodiert binäre Dezimalwerte (BCD) für die Anzeige auf dem 7-Segment Display
 BCC	BCD Up/Down Counter	Counter	Zählt zwischen 0 und 9 hoch oder runter, kann Werte laden
 BNC	Binary Up/Down Counter	Counter	Zählt zwischen 0 und 15 hoch oder runter, kann Werte laden
@@ -39,6 +41,7 @@ KEY	Keyboard 4x4	Input	Matrix aus 4x4 Tastern, die Ausgabe gibt an, welcher Tast
 LAD	Line Adapter	Connection	Adapter der die einzelnen Zeilen auf einzelne Ports aufteilt, z.B. für JK-Flipflop
 LED	LED Display	Output	Display für das Anzeigen von zwei binären Datenworten, je Port ein Ein- und Ausgang
 M81	Multiplexer 8:1	Coding	wählt aus 8 Eingängssignalen (2 Ports) eins für den Ausgang
+MIC	Microphone	Input	Ein Mikrofon für die Aufnahme von Schallwellen
 MTR	Dual Motor Shield	Output	für das Betreiben von zwei Gleichstrommotoren oder einem Schrittmotor (max. 2 A)
 MUX	Multiplexer 2:1	Coding	über ein Select-Signal wird aus zwei Datenworten eins für den Ausgang gewählt (4x2:1)
 MXC	Modulo X Counter	Counter	Zähler, der je nach Belegung modulo 3, 6, 9 oder 12 hochzählt
@@ -49,9 +52,11 @@ OPA	Operational Amplifier	Conversion	Operationsverstärker für das Kombinieren,
 PAN	Dual Port AND 4:1	Logic	Kombiniert die Signale von einem oder zwei Ports mit einem logischen AND (4:1, 5:1 oder 8:1)
 PIN	Quad Pin Header	Connection	Stiftleisten für die beliebige Kombination von bis zu 4 Ports oder für Messexperimente
 POR	Dual Port OR 4:1	Logic	Kombiniert die Signale von einem oder zwei Ports mit einem logischen OR (4:1, 5:1 oder 8:1)
+POT	Potentiometer	Input	Ein variabler Widerstand der für analoge Spannungen genutzt werden kann
 PRG	Pseudo Random Generator	Input	Erzeugt Pseudo Random Werte, die seriell und parallel (8 Bit) ausgegeben werden
+PWA	Pulse Width to Analog	Conversion	Wandelt Pulsweite (PWM) in eine analoge Spannung um
 PWM	PWM Generator	Input	Generiert PWM Signale für das Dimmen (Lampen) oder Steuern (Motoren)
-PWR	Power & Voltmeter	Power	Zum Versorgen der Schaltung stehen verschiedene Anschlüsse bereit, mit Spannungsregler und Voltmeter
+PWR	Power Regulation & Voltmeter	Connection	Variable Spannungsversorgung (Hohlstecker, Schraubklemme, Mini-USB) mit Regler und Voltmeter
 PXO	Dual Port XOR 4:1	Logic	Kombiniert die Signale von einem oder zwei Ports mit einem logischen XOR (4:1, 5:1 oder 8:1)
 QRS	Quad RS Buttons	Input	4xRS-Flipflops, die über je zwei Taster gesetzt und rückgesetzt werden
 REG	Register 2x4	Memory	Speichert zwei Datenworte mit einer Taktflanke und gibt die gespeicherten Werte parallel aus
@@ -69,5 +74,6 @@ SWI	Quad Switch	Input	Vier Kippschalter, die für das Setzen von statischen Wert
 TFF	Dual Toggle Flip-flop	Memory	Zweifaches T-Flipflop (wechselt Ausgang bei Taktflanke), mit separaten Ein- und Ausgängen
 TMP	Temperature Sensor	Input	misst die Temperatur (0 bis 100 °C) und gibt diese als analoges Signal aus
 UNI	Universal Register	Memory	Universelles Register für das Laden, Speichern und Schieben von Daten, paralleler Ein- und Ausgang
+VLT	Voltmeter	Output	Ein Voltmeter, das die Spannung eines Signals oder die Betriebsspannung anzeigt
 WNG	White Noise Generator	Input	Erzeugt weißes Rauschen, Einsatz z.B. als Quelle für echten Zufall (True Random Generator)
 XOR	XOR & XNOR	Logic	Kombiniert zwei Eingänge mit einem logischen XOR (exklusiv OR) und XNOR (invertiert XOR)
